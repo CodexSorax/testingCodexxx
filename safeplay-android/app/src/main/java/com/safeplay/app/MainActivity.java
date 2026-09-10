@@ -14,13 +14,8 @@ public class MainActivity extends Activity {
         WebSettings s = web.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
-        s.setAllowFileAccess(true);
         s.setMediaPlaybackRequiresUserGesture(true);
-        web.loadUrl("file:///android_asset/index.html");
+        web.loadUrl("https://codexsorax.github.io/testingCodexxx/safeplay/");
         setContentView(web);
-    }
-    @Override public void onBackPressed() {
-        WebView w = (WebView) findViewById(android.R.id.content).getRootView();
-        super.onBackPressed();
     }
 }
